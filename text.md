@@ -27,14 +27,7 @@ Przez to, że streamy są immutable, nie mamy problemy ze śledzeniem, jaką war
 - Kto z was nie wyobraża sobie życia bez pętli for?
 - Kto z was dobrze zna zagadnienia z kursu?
 
-- Na koniec popros o ocene
-
-Warto też wiedzieć, że streamy są leniwe.\
-To znaczy, że dopóki nie wywołamy metody terminalnej, to nic się nie wykona.\
-Dzięki temu możemy np. zrobić nieskończony stream, a potem wziąć z niego 10 pierwszych elementów.\
-Wtedy nie musimy się martwić, że program się zawiesi.\
-Wystarczy, że zamiast `stream()` użyjemy `stream().limit(10)`.\
-Streamy są też immutable, czyli niezmienne.\
+Proszę się nie bać i zadawać pytania.\
 
 ## 1
 
