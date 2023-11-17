@@ -1,6 +1,6 @@
 # Stream i przyjaciele
 
-## 0. Wstep
+## 0. About
 
 Na dzień dobry max 10 minut teorii, żeby zainteresowani wiedzieli, gdzie dalej pogłębiać wiedzę.\
 Zajęcia będą w 100% praktyczne, ale wierzę, że warto wiedzieć, skąd się biorą pewne rzeczy.\
@@ -18,18 +18,9 @@ Na pewno zdarzyło się Wam pomylić o jeden w pętli, albo zapomnieć o inkreme
 W streamach nie ma takich problemów.\
 Przez to, że streamy są immutable, nie mamy problemy ze śledzeniem, jaką wartość ma dana zmienna w danym momencie.\
 
-## Pytania
-
-- Kto z was zna Javę - tzn napisał w niej coś więcej niż Hello World?
-- Kto z was używa głównie arrayek zamiast np. listy?
-- Kto z was używał lambd?
-- Kto z was używał streamów?
-- Kto z was nie wyobraża sobie życia bez pętli for?
-- Kto z was dobrze zna zagadnienia z kursu?
-
 Proszę się nie bać i zadawać pytania.\
 
-## 1
+## 1. Intro
 
 W Javie 8 dodano możliwości funkcyjnego programowania, na tyle na ile pozwala konstrukcja javy.\
 Nauczymy się wykonywać operacje na kolekcjach i pisać programy w bardziej deklaratywny sposób.\
@@ -56,8 +47,12 @@ zaimplementowane w Javie.
 
 ## 1. Kolekcje
 
+Java dysponuje arrayami, ale nie są one zbyt wygodne w użyciu.\
+W większośći przypadków korzystamy z kolekcji.\
 W javie mamy różne kolekcje, np. listy, sety, mapy.\
 Wykonywanie na nich operacji jest łatwe, dzięki korzystaniu ze streamów.\
+Obecnie arrayie wykorzystujemy w zasadzie tylko gdy jakieś legacy API ich wymaga.\
+Albo gdy zależy nam na każdym bajcie pamięci, bo np piszemy embedded - jednak Java raczej nie służy do takich zasotoswań.\
 
 ## 2. Funkcja Lambda
 
@@ -73,7 +68,7 @@ Pokaż przykład
 
 Stream to strumień danych, który możemy przetwarzać.\
 Możemy go utworzyć na podstawie kolekcji, tablicy, pliku, itp.\
-Stream tworzy z danyc strumień, który możemy przetwarzać za pomocą operacji funkcyjnych, zdefiniowanych w interfejsie.\
+Stream tworzy z danych strumień, który możemy przetwarzać za pomocą operacji funkcyjnych, zdefiniowanych w interfejsie.\
 Jest wiele operacji, ale możemy je generalnie podzielić na dwie grupy:\
 - operacje pośrednie - zwracają nowy stream, np. map, filter, sorted, distinct, limit, skip
 - operacje terminalne - zwracają inny obiekt, np. forEach, collect, reduce, count, anyMatch, allMatch, noneMatch
@@ -88,4 +83,4 @@ Streamy mogą być sekwencyjne lub równoległe.\
 Domyślnie są sekwencyjne, ale możemy je zmienić na równoległe za pomocą metody `parallel()`.\
 Wtedy operacje będą wykonywane równolegle.\
 Warto jednak pamiętać, że nie zawsze równoległe operacje są szybsze, ponieważ wymagają synchronizacji - dodatkowego overheadu.\
-My nie będziemy się jednak nimi w ogóle zajmować.\
+My nie będziemy się jednak nimi w ogóle zajmować.

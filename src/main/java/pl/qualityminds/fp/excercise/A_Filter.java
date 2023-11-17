@@ -9,7 +9,6 @@ import java.util.List;
 public class A_Filter {
 
     private static final List<String> myList = Arrays.asList("a", "b", "c", "aa", "bb", "cc");
-    private static final List<String> myList2 = Arrays.asList("a", "b", "c", "aa", "bb", "cc");
 
     public static void main(String[] args) {
 
@@ -36,10 +35,5 @@ public class A_Filter {
 
         System.out.println(newList2);
         Assertions.assertThat(newList1).isEqualTo(newList2);
-
-
-        // removeIf // bonus
-        myList2.removeIf(el -> !el.contains("b")); // mutates
-        System.out.println(myList2);
     }
 }

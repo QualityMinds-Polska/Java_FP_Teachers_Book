@@ -1,4 +1,4 @@
-package pl.qualityminds.streams;
+package pl.qualityminds.fp;
 
 public class Main {
 

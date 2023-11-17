@@ -2,10 +2,7 @@ package pl.qualityminds.fp.example;
 
 import org.assertj.core.api.Assertions;
 
-import java.util.Arrays;
-import java.util.Map;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class A_Collections {
 
